@@ -1,1 +1,7 @@
 # LLMWOA
+# LLMWOA
+email:jiguang1107@foxmail.com
+In light of the limitations of the traditional Whale Optimization Algorithm (WOA), such as its reliance on fixed parameter adjustment rules, random probability for strategy switching, and tendency to get trapped in local optima, this paper proposes a Large Language Model (LLM)-assisted Whale Optimization Algorithm (LLM-WOA). This approach integrates the DeepSeek-V3.1 model into the core iterative process of WOA, enabling adaptive parameter adjustments and intelligent strategy modifications. Specifically, LLM-WOA features two main core mechanisms: 
+1) An LLM-assisted parameter and strategy decision module, which utilizes precise prompt engineering to allow the LLM to dynamically generate outputs for the contraction factor ( a ), spiral coefficient ( b ), and exploration/exploitation strategy probabilities based on real-time optimization status.
+2) An LLM-guided mechanism for escaping local optima, where the LLM generates population perturbation strategies to restore search diversity when the algorithm stagnates.
+To validate the performance of the algorithm, comparative experiments were conducted against traditional WOA using the CEC2022 test suite. The results indicate that LLM-WOA outperforms traditional WOA across all test functions, demonstrating that the incorporation of an LLM effectively addresses the insufficient adaptability of traditional WOA and provides a more efficient solution for complex optimization problems.
